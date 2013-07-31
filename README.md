@@ -25,5 +25,5 @@ vim
 ###ctags使用说明
 
 1、如果要解析c源文件，则在所在的源文件夹[比如tsar]中输入[ctags -R --c-kinds=+px-d]生成tags文件[注意要在普通用户权限下执行命令]。  
-2、然后配置.vimrc文件，加入[set tags+=~/workspace/tsar/tags]和[set path+=~/workspace/tsar/include]即可。
+2、然后配置.vimrc文件，加入[set tags+=~/workspace/tsar/tags]和[set path+=~/workspace/tsar/include]即可。  
 3、ctags的具体参数请看[http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/]
