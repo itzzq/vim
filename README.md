@@ -21,3 +21,9 @@ vim
 3、使用 Git 将本项目拷贝到个人主目录下，取代已删文件的位置，然后将 vimfiles、_vimrc 改名为 .vim、.vimrc [命令为 git clone https://github.com/itzzq/vim.git、mv _vim .vim、mv _vimrc .vimrc]  
 4、可上 https://github.com/ruchee/backup/blob/master/download/MONACO.TTF?raw=true 下载 Monaco 字体，下载后直接运行安装即  
 5、可使用任意文本编辑器打开 .vimrc，将名字、邮箱、网址等全部替换为你自己的信息，如遇路径不同也全部替换为你本机的实际路径  
+
+###ctags使用说明
+
+1、如果要解析c源文件，则在所在的源文件夹[比如tsar]中输入[ctags -R --c-kinds=+px-d]生成tags文件[注意要在普通用户权限下执行命令]。  
+2、然后配置.vimrc文件，加入[set tags+=~/workspace/tsar/tags]和[set path+=~/workspace/tsar/include]即可。
+3、ctags的具体参数请看[http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/]
